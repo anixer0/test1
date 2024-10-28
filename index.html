@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <a href="#"><span>ANY</span>PLAY</a>
+        </div>
+        
+            
+            <button id="searchanime" class="search__button">Search</button>
+          
+        
+        
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="/search.html">Search</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="/search.html">Search</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="tabs">
+      <h3>Recent Release</h3>
+      
+      <div id="tabs">
+        <button id="subbedTab" class="tab active">SUB</button>
+        <button id="dubbedTab" class="tab">DUB</button>
+        <button id="chinesTab" class="tab">CHINESE</button>
+      </div>
+    </div>
+
+    <div id="animelist" class="anime-list" ></div>
+
+    <div id="pagination"></div>
+<!-- <button id="prev">Prev</button>
+<button id="next">Next</button> -->
+
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>

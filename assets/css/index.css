@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #1db954;
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --secondary-bg: #282828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
+.tab {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    padding: 0.6em 1em;
+    border-radius: 1em;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--primary-color);
+} 
+
+
+
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 0.5rem; */
+    row-gap: 2rem;
+    max-width: 100%;
+    padding: 0.2rem;
+
+}
+
+.anime-item {
+    position: relative;
+    width: 10rem;
+    box-sizing: border-box;
+    justify-self: center;
+    align-items: center;
+
+}
+.image {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.anime-item img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+#pagination {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 0.5rem;
+    margin: 1.5rem;
+    box-sizing: border-box;
+}
+
+#pagination button {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8em 1em;
+    border-radius: 1.5em;
+    font-size: 0.8rem;
+}
+
+#pagination button.active {
+    background-color: var(--primary-color);
+}
